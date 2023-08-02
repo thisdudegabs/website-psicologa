@@ -1,0 +1,37 @@
+.beneficios-container {
+  max-width: 95vw;
+  margin: 0 auto;
+  margin-top: 10vh;
+}
+
+.beneficios-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.beneficios-col {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
+  max-width: 33.33%;
+}
+
+.beneficios-icon {
+  font-size: 10vh;
+}
+
+.beneficios-col h6 {
+  font-size: 5vh;
+}
+
+.beneficios-col p {
+  font-size: 5vh;
+}
+
+@media (max-width: 768px) {
+  .beneficios-col {
+    max-width: 100%;
+  }
+}

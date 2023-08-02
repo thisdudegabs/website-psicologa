@@ -1,0 +1,36 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-left: 0vw;
+  width: 100%;
+}
+
+.logo-link .logo {
+  height: 10vh;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-item:hover {
+  color: #ffd700;
+}
