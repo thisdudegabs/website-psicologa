@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import logoImg from "../../assets/logo/logo.png";
 import HamburgerMenu from "../../pages/HamburgerMenu";

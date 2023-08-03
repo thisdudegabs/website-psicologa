@@ -1,0 +1,27 @@
+.testimonialsDescription p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.testimonialsDescription h6 {
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .testimonialsDescription p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  .testimonialsDescription h6 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .testimonialsDescription img {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: cover;
+  }
+}

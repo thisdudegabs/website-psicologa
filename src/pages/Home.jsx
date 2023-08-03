@@ -1,8 +1,10 @@
 import React from "react";
 import Helmet from "../components/Helmet/Helmet";
 import Hero from "../components/UI/Hero";
-import Beneficios from "../components/UI/Beneficios";
 import { Col, Container, Row } from "reactstrap";
+import "../styles/home.css";
+import Beneficios from "../components/UI/Beneficios";
+import TestimonialSlider from "../components/UI/TestimonialSlider";
 
 const Home = () => {
   return (
@@ -21,11 +23,17 @@ const Home = () => {
         <Container>
           <Row>
             <Col>
-              <Beneficios />
+              <div className="text-intersection">
+                <h2>Como terapia vai me ajudar?</h2>
+                <Beneficios />
+                <h2>Como é feito a consulta?</h2>
+              </div>
             </Col>
           </Row>
         </Container>
       </section>
+
+      <section className="section-testimonials"></section>
     </Helmet>
   );
 };
