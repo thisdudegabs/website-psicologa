@@ -5,6 +5,7 @@ import { Col, Container, Row } from "reactstrap";
 import "../styles/home.css";
 import Beneficios from "../components/UI/Beneficios";
 import TestimonialSlider from "../components/UI/TestimonialSlider";
+import ConsultaDetalhes from "../components/UI/ConsultaDetalhes";
 
 const Home = () => {
   return (
@@ -33,7 +34,23 @@ const Home = () => {
         </Container>
       </section>
 
-      <section className="section-testimonials"></section>
+      <section className="curve-bg1">
+        <ConsultaDetalhes />
+      </section>
+
+      <section className="carousel-container">
+        <Container>
+          <Row>
+            <Col>
+              <div className="text-intersection">
+                <h2>Veja quem já foi ajudado!</h2>
+                <TestimonialSlider />
+                <h2>PERGUNTAS FREQUENTES!</h2>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </Helmet>
   );
 };

@@ -1,27 +1,59 @@
+* {
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
 .testimonialsDescription p {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   line-height: 2rem;
+  width: 80%;
+  color: #409ce7;
+  margin-bottom: 4vh;
 }
 
 .testimonialsDescription h6 {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
+}
+
+.image-definitions {
+  width: 25%;
+  height: 25%;
+  margin-right: 1rem;
+}
+
+.image-rounderness {
+  border-radius: 0.5rem;
+}
+
+.image-name {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.name {
+  margin-bottom: 0;
+}
+
+.image-name p {
+  margin-top: 3rem;
 }
 
 @media only screen and (max-width: 768px) {
   .testimonialsDescription p {
-    font-size: 0.8rem;
+    margin-left: 2vw;
+    font-size: 1.5rem;
     line-height: 1.5rem;
+    width: 95%;
+  }
+
+  .image-definitions {
+    margin-left: 2vw;
+    width: 25%;
+    height: 25%;
   }
 
   .testimonialsDescription h6 {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .testimonialsDescription img {
-    width: 60px !important;
-    height: 60px !important;
-    object-fit: cover;
+    font-size: 1.5rem;
   }
 }

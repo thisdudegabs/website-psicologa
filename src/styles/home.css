@@ -5,3 +5,22 @@
   font-size: 1.5rem;
   color: #409ce7;
 }
+.carousel-container {
+  padding: 0 10%;
+}
+
+.curve-bg1 {
+  /*mascara criada com https://css-generators.com/wavy-shapes/ */
+  height: 45vh;
+  background: linear-gradient(45deg, #12c2e9, #12c2e9, #12c2e9);
+  --mask: radial-gradient(52.57px at 50% 71.25px, #000 99%, #0000 101%)
+      calc(50% - 50px) 0/100px 51% repeat-x,
+    radial-gradient(52.57px at 50% -46.25px, #0000 99%, #000 101%) 50% 25px/100px
+      calc(51% - 25px) repeat-x,
+    radial-gradient(52.57px at 50% calc(100% - 71.25px), #000 99%, #0000 101%)
+      calc(50% - 50px) 100%/100px 51% repeat-x,
+    radial-gradient(52.57px at 50% calc(100% + 46.25px), #0000 99%, #000 101%)
+      50% calc(100% - 25px) / 100px calc(51% - 25px) repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}

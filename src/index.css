@@ -1,13 +1,99 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 
-body {
+/* ==========estilo base ========== */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  overflow-x: hidden;
+}
+
+/* ==========estilo base ========== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+h3.h4 {
+  font-size: 1.6rem;
+}
+
+h5,
+h6 {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #900;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+}
+
+.section_title {
+  color: #9378a0;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.section_subtitle {
+  color: #ffd700;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.section_description {
+  color: #987ea4;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+section {
+  padding: 50px 0px;
+}
+
+.btn {
+  padding: 7px 15px;
+  background: #987ea4 !important;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  color: #fff !important;
+  background: #4b0082 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    padding: 30px 0px;
+  }
+
+  .section_title {
+    font-size: 1.6rem;
+  }
+
+  .section_subtitle {
+    font-size: 1.1rem;
+  }
 }

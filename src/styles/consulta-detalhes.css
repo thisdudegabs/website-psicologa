@@ -1,0 +1,38 @@
+.consulta-container {
+  max-width: 95vw;
+  margin: 0 auto;
+  margin-top: 10vh;
+}
+
+.consulta-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.consulta-col {
+  flex: 1;
+  text-align: center;
+  padding: 15vh;
+  box-sizing: border-box;
+  max-width: 33.33%;
+}
+
+.consulta-icon {
+  font-size: 8vh;
+}
+
+.consulta-col h6 {
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+
+.consulta-col p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .consulta-col {
+    max-width: 100%;
+  }
+}
