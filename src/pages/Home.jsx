@@ -6,6 +6,7 @@ import "../styles/home.css";
 import Beneficios from "../components/UI/Beneficios";
 import TestimonialSlider from "../components/UI/TestimonialSlider";
 import ConsultaDetalhes from "../components/UI/ConsultaDetalhes";
+import Faq from "../components/UI/Faq";
 
 const Home = () => {
   return (
@@ -50,6 +51,10 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
+      </section>
+
+      <section className="curve-bg2">
+        <Faq />
       </section>
     </Helmet>
   );

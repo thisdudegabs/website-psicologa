@@ -24,3 +24,31 @@
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
+
+.curve-bg2 {
+  height: 61vh;
+  margin-top: -4vh;
+  background: linear-gradient(45deg, #12c2e9, #12c2e9, #12c2e9);
+  --mask: radial-gradient(52.57px at 50% 71.25px, #000 99%, #0000 101%)
+      calc(50% - 50px) 0/100px 51% repeat-x,
+    radial-gradient(52.57px at 50% -46.25px, #0000 99%, #000 101%) 50% 25px/100px
+      calc(51% - 25px) repeat-x,
+    radial-gradient(52.57px at 50% calc(100% - 71.25px), #000 99%, #0000 101%)
+      calc(50% - 50px) 100%/100px 51% repeat-x,
+    radial-gradient(52.57px at 50% calc(100% + 46.25px), #0000 99%, #000 101%)
+      50% calc(100% - 25px) / 100px calc(51% - 25px) repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+@media (max-width: 600px) {
+  .curve-bg2 {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 351px) {
+  .curve-bg2 {
+    height: 90vh;
+  }
+}
