@@ -1,0 +1,96 @@
+.atendimento-container {
+  text-align: center;
+}
+
+.atendimento-imagem {
+  margin-top: 13vh;
+  width: 100vw;
+  height: 55vh;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+.atendimento-titulo {
+  font-size: 2.5rem;
+  color: #12c2e9;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.descricao {
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: normal;
+}
+
+.atendimento-highlight {
+  color: #12c2e9;
+}
+
+.titulo,
+.descricao-agenda {
+  display: inline-block;
+  width: 60vw;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: #12c2e9;
+  margin-top: 2rem;
+}
+
+.descricao-agenda {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #000000;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  font-weight: normal;
+}
+
+.planos-logos {
+  display: flex;
+  justify-content: center;
+  gap: 7vw;
+  flex-wrap: wrap;
+}
+
+.plano-unimed,
+.plano-bradesco,
+.plano-prevent,
+.plano-porto {
+  object-fit: contain;
+  width: 10vw;
+  margin: 3rem;
+  height: auto;
+}
+
+.plano-porto {
+  width: 7vw;
+}
+
+.icones {
+  display: flex;
+  justify-content: center;
+  gap: 7vw;
+  flex-wrap: wrap;
+}
+
+.icone-celular,
+.icone-notebook,
+.icone-computador {
+  object-fit: contain;
+  width: 10vw;
+  margin: 3rem;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .plano-unimed,
+  .plano-bradesco,
+  .plano-prevent,
+  .plano-porto {
+    width: 20%;
+    gap: 0vw;
+  }
+}

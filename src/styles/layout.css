@@ -1,0 +1,16 @@
+.whatsapp-icon {
+  position: fixed;
+  right: 1vw;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000; /* Faz com que o ícone fique acima dos outros elementos */
+  width: 50px; /* Ajuste o tamanho conforme necessário */
+  height: 50px;
+  border-radius: 50%; /* Torna o ícone redondo */
+}
+
+.whatsapp-icon img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

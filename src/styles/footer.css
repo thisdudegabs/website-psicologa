@@ -1,0 +1,97 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.column {
+  flex-basis: 20%; /* Define o tamanho da coluna */
+  padding: 1rem;
+}
+
+.column p {
+  color: #409ce7;
+}
+
+.column span {
+  width: 20vw;
+}
+
+.links {
+  margin-left: -8vw;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row; /* Alinha horizontalmente o logo e o slogan */
+  align-items: center;
+}
+
+.logo img {
+  max-width: 15vw; /* Ajuste conforme necessário */
+  margin-bottom: 1rem;
+}
+
+.links h4,
+.contact h4 {
+  font-size: 1.2rem;
+}
+
+.logo .slogan {
+  margin-left: 1rem; /* Espaçamento entre o logo e o slogan */
+  font-size: 1rem;
+}
+
+.links a,
+.contact p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.links a {
+  color: #409ce7;
+  text-decoration: none;
+  display: block; /* Coloca os links em linhas separadas */
+}
+
+.links a:hover {
+  color: #000000;
+}
+
+.copyright {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #000000;
+}
+
+@media screen and (max-width: 657px) {
+  .footer {
+    flex-direction: column; /* Muda a direção para coluna */
+    align-items: center; /* Centraliza os elementos */
+  }
+
+  .logo {
+    flex-direction: column; /* Muda a direção para coluna dentro da seção de logo */
+  }
+
+  .logo img {
+    max-width: 70%; /* Ajuste o tamanho do logo conforme necessário */
+    margin-bottom: 0.5rem; /* Espaçamento entre o logo e o slogan */
+  }
+
+  .column {
+    flex-basis: auto; /* Redefine a base da flexão para auto */
+    padding: 1rem;
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .links {
+    margin-left: 0; /* Remove a margem esquerda */
+  }
+
+  .copyright {
+    text-align: center;
+  }
+}

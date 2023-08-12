@@ -83,8 +83,8 @@ const TestimonialSlider = () => {
 
       <div className="testimonialsDescription py-4 px-3">
         <p className="section_description">
-          Atendimento rápido e eficiente, além de preços acessíveis. Minha
-          clínica veterinária de confiança!
+          Marquei mais 5 consultas seguidas porque acredito que ela melhorou
+          muito minha vida!
         </p>
 
         <div className="image-name">
@@ -103,8 +103,8 @@ const TestimonialSlider = () => {
 
       <div className="testimonialsDescription py-4 px-3">
         <p className="section_description">
-          Equipe simpática e atenciosa, sempre pronta para esclarecer minhas
-          dúvidas. Recomendo a todos os donos de animais!
+          Fazer via Psicologia Viva foi a melhor experiência pra mim porque me
+          senti mais confortável do que me deslocando e indo até um consultório.
         </p>
 
         <div className="image-name">

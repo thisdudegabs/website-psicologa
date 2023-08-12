@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+/*card1*/
+
+.card1 {
+  position: relative;
+  margin-top: 8vh;
+  min-width: 40vh;
+  height: 20vh;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+
+.card1:hover {
+  height: 48vh;
+}
+
+.imgBx1 {
+  position: absolute;
+  left: 50%;
+  top: -5vh;
+  transform: translateX(-50%);
+  width: 8vw;
+  height: 16vh;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4vh 8vw rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card1:hover .imgBx1 {
+  width: 15vw;
+  height: 26vh;
+}
+
+.imgBx1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card1 .content1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.card1 .content1 .details1 {
+  padding: 4vh;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(18vh);
+}
+
+.card1:hover .content1 .details1 {
+  transform: translateY(0px);
+}
+
+.card1 .content1 .details1 h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #555;
+  line-height: 1.2rem;
+}
+
+.card1 .content1 .details1 h2 span {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.card1 .content1 .details1 .data1 {
+  display: flex;
+  justify-content: center;
+  margin: 2vh 0;
+}
+
+.card1 .content1 .details1 .data1 h3 {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+.card1 .content1 .details1 .data1 h3 span {
+  font-size: 0.8em;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.card1 .content1 .details1 .actionBtn1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 2vh;
+}
+
+.card1 .content1 .details1 .actionBtn1 button {
+  padding: 0.6vh 2vw;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-weight: 500;
+  background: #987ea4;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card1 .content1 .details1 .actionBtn1 button:nth-child(2) {
+  border: 1px solid #999 !important;
+  color: #00ad63 !important;
+  background: #fff !important;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1024px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card1 {
+    margin-left: 30vw;
+
+    margin-top: 8vh;
+    max-width: 30%;
+    height: 20vh;
+  }
+
+  .imgBx1 {
+    position: absolute;
+    left: 50%;
+    top: -5vh;
+    transform: translateX(-50%);
+    width: 20vw !important;
+    height: 16vh;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4vh 8vw rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .card1:hover .imgBx1 {
+    width: 20vw !important;
+    height: 25vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .card1 {
+    margin-left: 25vw;
+
+    margin-top: 8vh;
+    max-width: 30%;
+    height: 20vh;
+  }
+
+  .imgBx1 {
+    position: absolute;
+    left: 50%;
+    top: -5vh;
+    transform: translateX(-50%);
+    width: 20vw !important;
+    height: 16vh;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4vh 8vw rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .card1:hover .imgBx1 {
+    width: 22vw !important;
+    height: 25vh;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card1 {
+    margin-left: 15vw;
+
+    margin-top: 8vh;
+    max-width: 30%;
+    height: 20vh;
+  }
+
+  .imgBx1 {
+    position: absolute;
+    left: 50%;
+    top: -5vh;
+    transform: translateX(-50%);
+    width: 30vw !important;
+    height: 16vh;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4vh 8vw rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .card1:hover .imgBx1 {
+    width: 50vw !important;
+    height: 25vh;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .card1 {
+    margin-left: 7vw;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card1 {
+    margin-left: 1vw;
+  }
+}
