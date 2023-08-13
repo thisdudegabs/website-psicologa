@@ -41,7 +41,6 @@
   margin-top: 2rem;
   font-size: 1.2rem;
   color: #000000;
-  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   display: -webkit-box;
@@ -92,5 +91,18 @@
   .plano-porto {
     width: 20%;
     gap: 0vw;
+  }
+}
+
+@media (max-width: 514px) {
+  .icones {
+    flex-direction: column;
+    align-items: center;
+    gap: 0vw;
+  }
+
+  .icones img {
+    height: 10vh;
+    width: 10vh;
   }
 }
