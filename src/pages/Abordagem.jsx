@@ -58,7 +58,7 @@ const Abordagem = () => {
           em 3 áreas:
         </p>
 
-        <div className="curve-bg1">
+        <div className="curve-bg2">
           <ol className="abordagem-lista">
             <li>
               <span className="abordagem-highlight2">Aceitação</span> da

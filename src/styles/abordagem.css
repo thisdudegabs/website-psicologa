@@ -32,7 +32,7 @@
   font-size: 2rem;
   color: #000000;
   width: 96vw;
-  margin: 1rem 2vw;
+  margin: 3rem 2vw;
   text-align: left;
   font-weight: normal;
 }
@@ -41,7 +41,7 @@
   font-size: 2rem;
   color: #333333;
   width: 90vw;
-  margin: 1rem 2vw;
+  margin: 3rem 2vw;
 }
 
 .abordagem-lista li {
@@ -50,8 +50,8 @@
 
 .curve-bg1 {
   /*mascara criada com https://css-generators.com/wavy-shapes/ */
-  height: 45vh;
   width: 100vw;
+  height: auto;
   background: linear-gradient(45deg, #12c2e9, #12c2e9, #12c2e9);
   --mask: radial-gradient(52.57px at 50% 71.25px, #000 99%, #0000 101%)
       calc(50% - 50px) 0/100px 51% repeat-x,
@@ -63,13 +63,73 @@
       50% calc(100% - 25px) / 100px calc(51% - 25px) repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
+  overflow: hidden;
 }
 
 .curve-bg1 p {
   margin-top: 6vh;
 }
 
-.curve-bg1 li {
+.curve-bg2 {
+  width: 100vw;
+  height: auto;
+  background: linear-gradient(45deg, #12c2e9, #12c2e9, #12c2e9);
+  --mask: radial-gradient(52.57px at 50% 71.25px, #000 99%, #0000 101%)
+      calc(50% - 50px) 0/100px 51% repeat-x,
+    radial-gradient(52.57px at 50% -46.25px, #0000 99%, #000 101%) 50% 25px/100px
+      calc(51% - 25px) repeat-x,
+    radial-gradient(52.57px at 50% calc(100% - 71.25px), #000 99%, #0000 101%)
+      calc(50% - 50px) 100%/100px 51% repeat-x,
+    radial-gradient(52.57px at 50% calc(100% + 46.25px), #0000 99%, #000 101%)
+      50% calc(100% - 25px) / 100px calc(51% - 25px) repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  overflow: hidden;
+}
+
+.curve-bg2 li {
   margin-top: 6vh;
   margin-left: 5vw;
+}
+
+@media (max-width: 948px) {
+  .curve-bg1 {
+    height: auto;
+    min-height: 30vh;
+    max-height: 35vh;
+  }
+
+  .abordagem-descrição {
+    font-size: 1.5rem;
+  }
+
+  .abordagem-lista {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 601px) {
+  .curve-bg2 {
+    height: auto;
+    min-height: 35vh;
+    max-height: 45vh;
+  }
+}
+
+@media (max-width: 537px) {
+  .curve-bg1 {
+    height: auto;
+    min-height: 40vh;
+    max-height: 45vh;
+  }
+}
+
+@media (max-width: 391px) {
+  .abordagem-descrição {
+    font-size: 1.3rem;
+  }
+
+  .abordagem-lista {
+    font-size: 1.3rem;
+  }
 }

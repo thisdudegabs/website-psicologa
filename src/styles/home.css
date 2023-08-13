@@ -10,7 +10,7 @@
 }
 
 .curve-bg1 {
-  overflow: hidden; /* Isso irá prevenir o scroll */
+  overflow: hidden;
   background: linear-gradient(45deg, #12c2e9, #12c2e9, #12c2e9);
   --mask: radial-gradient(52.57px at 50% 71.25px, #000 99%, #0000 101%)
       calc(50% - 50px) 0/100px 51% repeat-x,
@@ -22,13 +22,13 @@
       50% calc(100% - 25px) / 100px calc(51% - 25px) repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
-  padding-top: 1vh; /* Espaço adicional abaixo do conteúdo */
+  padding-top: 1vh;
 
-  padding-bottom: 1vh; /* Espaço adicional abaixo do conteúdo */
+  padding-bottom: 1vh;
 }
 
 .curve-bg2 {
-  overflow: hidden; /* Isso irá prevenir o scroll */
+  overflow: hidden;
   background: linear-gradient(45deg, #12c2e9, #12c2e9, #12c2e9);
   --mask: radial-gradient(52.57px at 50% 71.25px, #000 99%, #0000 101%)
       calc(50% - 50px) 0/100px 51% repeat-x,
@@ -40,9 +40,9 @@
       50% calc(100% - 25px) / 100px calc(51% - 25px) repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
-  padding-top: 1vh; /* Espaço adicional abaixo do conteúdo */
+  padding-top: 1vh;
 
-  padding-bottom: 1vh; /* Espaço adicional abaixo do conteúdo */
+  padding-bottom: 1vh;
 }
 
 @media (max-width: 948px) {
