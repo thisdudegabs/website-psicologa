@@ -31,8 +31,13 @@
   font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 948px) {
+  .consulta-row {
+    flex-direction: column;
+    align-items: center;
+  }
   .consulta-col {
     max-width: 100%;
+    padding: 5vh;
   }
 }

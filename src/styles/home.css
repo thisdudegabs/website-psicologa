@@ -10,8 +10,7 @@
 }
 
 .curve-bg1 {
-  /*mascara criada com https://css-generators.com/wavy-shapes/ */
-  height: 45vh;
+  overflow: hidden; /* Isso irá prevenir o scroll */
   background: linear-gradient(45deg, #12c2e9, #12c2e9, #12c2e9);
   --mask: radial-gradient(52.57px at 50% 71.25px, #000 99%, #0000 101%)
       calc(50% - 50px) 0/100px 51% repeat-x,
@@ -23,11 +22,13 @@
       50% calc(100% - 25px) / 100px calc(51% - 25px) repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
+  padding-top: 1vh; /* Espaço adicional abaixo do conteúdo */
+
+  padding-bottom: 1vh; /* Espaço adicional abaixo do conteúdo */
 }
 
 .curve-bg2 {
-  height: 75vh;
-  margin-top: -4vh;
+  overflow: hidden; /* Isso irá prevenir o scroll */
   background: linear-gradient(45deg, #12c2e9, #12c2e9, #12c2e9);
   --mask: radial-gradient(52.57px at 50% 71.25px, #000 99%, #0000 101%)
       calc(50% - 50px) 0/100px 51% repeat-x,
@@ -39,6 +40,15 @@
       50% calc(100% - 25px) / 100px calc(51% - 25px) repeat-x;
   -webkit-mask: var(--mask);
   mask: var(--mask);
+  padding-top: 1vh; /* Espaço adicional abaixo do conteúdo */
+
+  padding-bottom: 1vh; /* Espaço adicional abaixo do conteúdo */
+}
+
+@media (max-width: 948px) {
+  .curve-bg1 {
+    height: 90vh;
+  }
 }
 
 @media (max-width: 600px) {
