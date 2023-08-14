@@ -18,7 +18,6 @@ const Footer = () => {
           <a href="/atendimento">Atendimento</a>
           <a href="/abordagem">Abordagem</a>
           <a href="/sobre">Sobre Mim</a>
-          <a href="/faq">FAQ</a>
         </div>
         <div className="column contact">
           <h4>Contato</h4>
